@@ -5029,7 +5029,7 @@ const useRuntimeConfig$1 = ()=>{
 , appConfig = useRuntimeConfig$1().app
 , baseURL = ()=>appConfig.baseURL
 , buildAssetsDir = ()=>appConfig.buildAssetsDir
-, buildAssetsURL = (...e)=>joinRelativeURL(publicAssetsURL(), buildAssetsDir(), ...e)
+, buildAssetsURL = (...e)=>`/nuxt/${joinRelativeURL(...e)}`
 , publicAssetsURL = (...e)=>{
   const t = appConfig.cdnURL || appConfig.baseURL;
   return e.length ? joinRelativeURL(t, ...e) : t
