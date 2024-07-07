@@ -4995,7 +4995,7 @@ function parseURL$1(e="", t) {
       return t ? parseURL$1(t + e) : parsePath(e);
   const [,a="",o,l=""] = e.replace(/\\/g, "/").match(/^[\s\0]*([\w+.-]{2,}:)?\/\/([^/@]+@)?(.*)/) || []
     , [,f="",d=""] = l.match(/([^#/?]*)(.*)?/) || []
-    , {pathname: g, hash: v} = parsePath(d.replace(/\/(?=[A-Za-z]:)/, ""));
+    , {pathname: g, search: _, hash: v} = parsePath(d.replace(/\/(?=[A-Za-z]:)/, ""));
   return {
       protocol: a.toLowerCase(),
       auth: o ? o.slice(0, Math.max(0, o.length - 1)) : "",
@@ -5241,8 +5241,8 @@ function createFetch(e={}) {
       !v.options.ignoreResponseError && v.response.status >= 400 && v.response.status < 600 ? (v.options.onResponseError && await v.options.onResponseError(v),
       await o(v)) : v.response
   }
-    , f = async function(g,) {
-      return (await l(g))._data
+    , f = async function(g, _) {
+      return (await l(g, _))._data
   };
   return f.raw = l,
   f.native = (...d)=>t(...d),
