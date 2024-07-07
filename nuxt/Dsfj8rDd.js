@@ -5241,8 +5241,8 @@ function createFetch(e={}) {
       !v.options.ignoreResponseError && v.response.status >= 400 && v.response.status < 600 ? (v.options.onResponseError && await v.options.onResponseError(v),
       await o(v)) : v.response
   }
-    , f = async function(g, _) {
-      return (await l(g, _))._data
+    , f = async function(g,) {
+      return (await l(g))._data
   };
   return f.raw = l,
   f.native = (...d)=>t(...d),
