@@ -1,0 +1,219 @@
+.c-popup[data-v-c7bf87a6] {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.popup-overlay[data-v-c7bf87a6] {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0
+}
+
+video[data-v-c7bf87a6] {
+    max-height: 65vh;
+    max-width: 90%
+}
+
+.menu-button[data-v-c7bf87a6] {
+    color: #fff;
+    font-family: var(--title);
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 5px;
+    position: absolute;
+    right: 73px;
+    text-transform: uppercase;
+    top: 30px
+}
+
+@media screen and (max-width: 767px) {
+    .menu-button[data-v-c7bf87a6] {
+        padding-top:6px;
+        right: 23px;
+        top: 24px
+    }
+
+    video[data-v-c7bf87a6] {
+        width: 100%
+    }
+}
+
+.header-subtext>h1[data-v-b4efcd28] {
+    opacity: 0;
+    transform: rotateX(90deg) perspective(2000px)
+}
+
+.header-re>h1[data-v-b4efcd28] {
+    opacity: 0;
+    transform: skew(-14deg) rotateX(90deg) perspective(2000px)
+}
+
+.header-think>h1[data-v-b4efcd28] {
+    opacity: 0;
+    transform: rotateX(90deg) perspective(2000px)
+}
+
+.header-tag.cc-branding[data-v-b4efcd28] {
+    opacity: 0;
+    transform: translateY(50px) rotate(-12.4deg)
+}
+
+.header-tag.cc-digital[data-v-b4efcd28] {
+    opacity: 0;
+    transform: translateY(50px) rotate(14.8deg)
+}
+
+.header-tag.cc-strategy[data-v-b4efcd28] {
+    opacity: 0;
+    transform: translateY(50px) rotate(-8.9deg)
+}
+
+.header-video_block.cc-mobile[data-v-b4efcd28] {
+    -webkit-clip-path: polygon(50% 50%,50% 50%,50% 50%,50% 50%);
+    clip-path: polygon(50% 50%,50% 50%,50% 50%,50% 50%)
+}
+
+.header-video_block.cc-mobile>img[data-v-b4efcd28] {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    scale: 1.5;
+    top: 0;
+    width: 100%
+}
+
+.c-button.home[data-v-b4efcd28] {
+    display: none
+}
+
+.c-nav[data-v-b4efcd28] {
+    opacity: 0;
+    transform: translateY(-100%)
+}
+
+.stats-sketch[data-v-b4efcd28] {
+    background-image: none
+}
+
+.video-cta[data-v-b4efcd28] {
+    background-color: #0000001a;
+    opacity: 1
+}
+
+.header-video_mobile[data-v-b4efcd28] {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100vw
+}
+
+.stat-video[data-v-b4efcd28] {
+    pointer-events: none;
+    width: 120%
+}
+
+.dollar-sign[data-v-b4efcd28] {
+    transform: translateY(-60px)
+}
+
+.play-btn[data-v-b4efcd28] {
+    align-items: center;
+    background: #fff;
+    border-radius: 50%;
+    color: var(--black);
+    display: flex;
+    font-family: var(--title);
+    font-size: 30px;
+    font-weight: 600;
+    height: 50px;
+    justify-content: center;
+    left: -25px;
+    opacity: 0;
+    padding-top: 5px;
+    pointer-events: none;
+    position: fixed;
+    text-transform: uppercase;
+    top: -25px;
+    transform-origin: 50% 50%;
+    transition: opacity .2s ease,width .4s ease-out,height .4s ease-out,transform .3s ease-out;
+    width: 50px;
+    z-index: 99
+}
+
+.video-cta[data-v-b4efcd28] {
+    cursor: none
+}
+
+@media screen and (min-width: 992px) {
+    .stats-block_wrapper[data-v-b4efcd28] {
+        padding-left:70vw
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header-video_block.cc-bottom[data-v-b4efcd28],.header-video_block.cc-top[data-v-b4efcd28] {
+        flex:0
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .stats-sketch_block[data-v-b4efcd28] {
+        align-items:center;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        position: relative
+    }
+
+    .stats-sketch_block>img[data-v-b4efcd28] {
+        height: 100%;
+        position: absolute
+    }
+
+    .stats-block_flex[data-v-b4efcd28] {
+        margin-bottom: 0
+    }
+
+    .dollar-sign[data-v-b4efcd28] {
+        transform: translateY(-45px)
+    }
+
+    .play-btn[data-v-b4efcd28] {
+        display: none
+    }
+
+    .play-btn.cc-mobile[data-v-b4efcd28] {
+        display: flex;
+        height: 75px;
+        left: unset;
+        overflow: hidden;
+        position: relative;
+        top: unset;
+        transition: none;
+        width: 75px;
+        z-index: 10
+    }
+
+    .video-cta[data-v-b4efcd28] {
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        justify-content: center
+    }
+
+    .header-subtext_container[data-v-b4efcd28] {
+        flex-direction: column;
+        gap: 30px
+    }
+
+    .c-button.home[data-v-b4efcd28] {
+        display: block;
+        opacity: 0;
+        visibility: hidden
+    }
+}
