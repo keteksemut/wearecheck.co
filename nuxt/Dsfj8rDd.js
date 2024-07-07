@@ -4995,7 +4995,7 @@ function parseURL$1(e="", t) {
       return t ? parseURL$1(t + e) : parsePath(e);
   const [,a="",o,l=""] = e.replace(/\\/g, "/").match(/^[\s\0]*([\w+.-]{2,}:)?\/\/([^/@]+@)?(.*)/) || []
     , [,f="",d=""] = l.match(/([^#/?]*)(.*)?/) || []
-    , {pathname: g, search: _, hash: v} = parsePath(d.replace(/\/(?=[A-Za-z]:)/, ""));
+    , {pathname: g, hash: v} = parsePath(d.replace(/\/(?=[A-Za-z]:)/, ""));
   return {
       protocol: a.toLowerCase(),
       auth: o ? o.slice(0, Math.max(0, o.length - 1)) : "",
